@@ -15,7 +15,7 @@ As we strive to create ever more advanced forms of artificial general intelligen
 
 
 # Instructions
-Step 1. Create pinecone account for vector database where memories will be stored. https://www.pinecone.io/ 
-Step 2. Add pinecone api key and environment found when account created to python script, PINECONE_API_KEY and PINECONE_ENVIRONMENT.
-Step 3. Install libraries, easiest is to just run script and see what is missing. Transformers, paho-mqtt, etc
-Step 4. Launch and beware of the execution of binary files -> run in VM.
+1. Create pinecone account for vector database where memories will be stored. https://www.pinecone.io/ 
+2. Add pinecone api key and environment found when account created to python script, PINECONE_API_KEY and PINECONE_ENVIRONMENT.
+3. Install libraries, easiest is to just run script and see what is missing. Transformers, paho-mqtt, etc
+4. Launch and beware of the execution of binary files -> run in VM.
