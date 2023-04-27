@@ -19,6 +19,8 @@ As we strive to create ever more advanced forms of artificial general intelligen
 2. Add pinecone api key and environment found when account created to python script, PINECONE_API_KEY and PINECONE_ENVIRONMENT.
 3. Install libraries, easiest is to just run script and see what is missing. Transformers, paho-mqtt, etc
 4. Launch and beware of the execution of binary files -> run in VM.
+5. The script does not communicate its distribution over mqtt, that is commented out, however if several transformers are started, they share the same vector database.
+6. Images of the probability distribution and entropy is saved to /home/ubuntu/ which you might have to change.
 ```
     python3 cleaned_bytemed.py
 ```
