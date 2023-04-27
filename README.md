@@ -21,6 +21,7 @@ As we strive to create ever more advanced forms of artificial general intelligen
 4. Launch and beware of the execution of binary files -> run in VM.
 ```
     python3 cleaned_bytemed.py
+```
 
 
-![Alt Text](wowhehasthoughtalot.png)
+![Image description](./wowhehasthoughtalot.png)
