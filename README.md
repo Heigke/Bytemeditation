@@ -27,3 +27,16 @@ As we strive to create ever more advanced forms of artificial general intelligen
 Below follows an explanation of what is going on.
 
 ![Image description](./wowhehasthoughtalot.png)
+
+
+# Some Examples of Behaviour
+
+So first we have the standard behaviour it comes back to, for this one it seem to like the byte b'"' and b'\n'.
+
+And later we have the occasional haywire behaviour.
+
+![Image description](./personaperhaps.png)
+
+![Image description](./whenitgoeshaywire.png)
+
+
