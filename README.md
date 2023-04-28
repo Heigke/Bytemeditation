@@ -25,7 +25,7 @@ As we strive to create ever more advanced forms of artificial general intelligen
     python3 cleaned_bytemed.py
 ```
 
-# Everyone Want To Be An Architect These Days
+# Everyone Wants To Be An Architect These Days
 Below follows an explanation of what is going on.
 
 ![Image description](./wowhehasthoughtalot.png)
