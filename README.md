@@ -1,4 +1,4 @@
-![Image](./bytemeditation-welcome2.png)
+![Image](./bytemeditation_welcome2.png)
 
 
 Request: Please come with remarks and ideas of what you would like to have in terms of capabilities if you were a computer!
