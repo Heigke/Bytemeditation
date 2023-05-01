@@ -40,5 +40,7 @@ And later we have the occasional haywire behaviour.
 ![Image description](./personaperhaps.png)
 
 ![Image description](./whenitgoeshaywire.png)
+Below we can see some of the common system calls that the execution does.
 
+![Image](./stracesummary.png)
 
