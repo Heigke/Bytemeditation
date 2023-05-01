@@ -33,6 +33,10 @@ Below follows an explanation of what is going on.
 
 ![Image description](./wowhehasthoughtalot.png)
 
+# Trying to Identify what is happening!
+
+Below I have drawn the graph of each entropy contribution, then some guesses of what happens during a run and then some of, what I think, are the forces at play!
+![entropyforces](./entropyforces.png)
 
 # Some Examples of Behaviour
 
