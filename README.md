@@ -1,3 +1,6 @@
+![Image](./bytemeditation-welcome2.png)
+
+
 Request: Please come with remarks and ideas of what you would like to have in terms of capabilities if you were a computer!
 # Bytemeditation
 A byte2byte transformer receiveing output, related previous output (memory) and /dev/random vector as input.
