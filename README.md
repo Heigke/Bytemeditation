@@ -51,6 +51,7 @@ Below we can see some of the common system calls that the execution does.
 
 ![Image](./img/stracesummary.png)
 
+
 Below are some of the typical files that the execution seem to create, I have just seen empty ones this far.
 
 ![Filecreation](./img/filecreation.png)
