@@ -1,4 +1,4 @@
-![Image](./bytemeditation_welcome2.png)
+![Image](./img/bytemeditation_welcome2.png)
 
 
 Request: Please come with remarks and ideas of what you would like to have in terms of capabilities if you were a computer!
@@ -31,12 +31,12 @@ As we strive to create ever more advanced forms of artificial general intelligen
 # Everyone Wants To Be An Architect These Days
 Below follows an explanation of what is going on.
 
-![Image description](./wowhehasthoughtalot.png)
+![Image description](./img/wowhehasthoughtalot.png)
 
 # Trying to Identify what is happening!
 
 Below I have drawn the graph of each entropy contribution, then some guesses of what happens during a run and then some of what, I think, are the forces at play!
-![entropyforces](./entropyforces.png)
+![entropyforces](./img/entropyforces.png)
 
 # Some Examples of Behaviour
 
@@ -44,13 +44,15 @@ So first we have the standard behaviour it comes back to, for this one it seem t
 
 And later we have the occasional haywire behaviour.
 
-![Image description](./personaperhaps.png)
+![Image description](./img/personaperhaps.png)
 
-![Image description](./whenitgoeshaywire.png)
+![Image description](./img/whenitgoeshaywire.png)
 Below we can see some of the common system calls that the execution does.
 
-![Image](./stracesummary.png)
+![Image](./img/stracesummary.png)
 
 Below are some of the typical files that the execution seem to create, I have just seen empty ones this far.
 
-![Filecreation](./filecreation.png)
+![Filecreation](./img/filecreation.png)
+Below happened when i exited a running script for update, it seem like a copying process might have been running in the background(?)
+![CopyingInBackground](./img/copyingsomething.png)
