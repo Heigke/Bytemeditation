@@ -35,7 +35,7 @@ Below follows an explanation of what is going on.
 
 # Trying to Identify what is happening!
 
-Below I have drawn the graph of each entropy contribution, then some guesses of what happens during a run and then some of, what I think, are the forces at play!
+Below I have drawn the graph of each entropy contribution, then some guesses of what happens during a run and then some of what, I think, are the forces at play!
 ![entropyforces](./entropyforces.png)
 
 # Some Examples of Behaviour
@@ -51,3 +51,6 @@ Below we can see some of the common system calls that the execution does.
 
 ![Image](./stracesummary.png)
 
+Below are some of the typical files that the execution seem to create, I have just seen empty ones this far.
+
+![Filecreation](./filecreation.png)
