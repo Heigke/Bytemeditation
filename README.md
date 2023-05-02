@@ -2,7 +2,8 @@
 
 
 Request: Please come with remarks and ideas of what you would like to have in terms of capabilities if you were a computer!
-# Bytemeditation
+# Welcome to Bytemeditation!
+A short description:
 A byte2byte transformer receiveing output, related previous output (memory) and /dev/random vector as input.
 Output is trained against maximised "entropy per byte" metric, see report. 
 Output is stored in vector database (memories). Output is executed in binary form. The counts of the number of bytes outputted, which
