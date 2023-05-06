@@ -2,6 +2,7 @@
 
 
 Request: Please come with remarks and ideas of what you would like to have in terms of capabilities if you were a computer!
+Latest update: 20220506 In search for a stronger T5 model I tried the [LORA](https://arxiv.org/abs/2106.09685) method via this [tutorial](https://www.philschmid.de/fine-tune-flan-t5-peft).
 # Welcome to Bytemeditation!
 A short description:
 A byte2byte transformer receiveing output, related previous output (memory) and /dev/random vector as input.
