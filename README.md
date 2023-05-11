@@ -6,8 +6,8 @@ Request: Please come with remarks and ideas of what you would like to have in te
 Latest update: 20220506 In search for a stronger T5 model I tried the [LORA](https://arxiv.org/abs/2106.09685) method via this [tutorial](https://www.philschmid.de/fine-tune-flan-t5-peft).
 # Welcome to Bytemeditation!
 A short description:
-A byte2byte transformer receiveing output, related previous output (memory) and /dev/random vector as input.
-Output is trained against maximised "entropy per byte" metric, see report. 
+A byte2byte transformer receiveing output, related previous output (memory) and /dev/random + tcpdump vector as input.
+Output is trained against maximised "entropy per byte" and global entropy metric, see report. 
 Output is stored in vector database (memories). Output is executed in binary form. The counts of the number of bytes outputted, which
 is a base for the distribution used for the entropy, is exchanged with other transformers via mqtt broker.
 The vector database is also common for the transformers.
