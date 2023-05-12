@@ -71,3 +71,7 @@ Below is an example of how the execution easily can change the symbols in the te
 ls -l | grep 19
 ```
 ![symbolchange](./img/symbolchange.png)
+
+# Recurrent execution
+The execution of the binaries have never been looping like this before but then it stopped. If it was by itself or the interaction, I do not know.
+![RecurrentExecution](./img/recurrent_execution.mov)
