@@ -74,4 +74,4 @@ ls -l | grep 19
 
 # Recurrent execution
 The execution of the binaries have never been looping like this before but then it stopped. If it was by itself or the interaction, I do not know.
-![RecurrentExecution](./img/recurrent_execution.mov)
+![RecurrentExecution](./img/recurrent_execution.mp4)
