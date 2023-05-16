@@ -1,6 +1,6 @@
 ############TCP DUMP TO BYTELITERAL#####################
-# Input: num_bytes_to_read (int between 0 and inf)
-#        net_interface (network interface name from eg ifconfig)
+# Input: num_bytes_to_read (int, between 0 and inf, eg 10)
+#        net_interface (string, network interface name from eg ifconfig, eg "ens224")
 # Output: num_bytes_to_read bytes from network interface in byteliteral format as list eg [b'\n', b'\xff']
 ##########################################################
 
