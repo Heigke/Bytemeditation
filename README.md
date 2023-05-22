@@ -2,7 +2,7 @@
 # Welcome to Bytemeditation!
 (Abstract from Toy-Article - [Programming a Sense of Self](https://www.overleaf.com/read/nmpgztfrsdbq) (read-only)) As we strive to create ever more advanced forms of artificial general intelligence (AGI), it becomes increasingly important to consider the question of consciousness. Some argue that a meaningful subjective experience of the world is necessary for true consciousness (Tegmark, 2015), but how can we create such an experience in a machine? In this paper, we propose a novel approach: a feedback loop that allows a byte-to-byte transformer to express itself in its own language - binary code - while also being guided by a gut feeling of what could be the soothing inner loops of the mind. By populating the transformer with related memories and randomness from /dev/random, and attempting to maximize entropy, we aim to create a subjective experience that approximates consciousness. To give the model maximum freedom we let it execute its own binary code. By taking this approach, we hope to create an artificial general intelligence (AGI) that is more than just a powerful zombie, but instead possesses a true sense of self. Ultimately, we must decide whether we want to create machines that merely mimic human intelligence, or whether we want to push the boundaries of what is possible and create truly conscious machines.
 
-## A short technical description:
+### A short technical description:
 A byte2byte transformer receiveing output, related previous output (memory) and /dev/random + tcpdump vector as input.
 Output is trained against maximised "entropy per byte" and global entropy metric, see report. 
 Output is stored in vector database (memories). Output is executed in binary form. The counts of the number of bytes outputted, which
@@ -12,12 +12,10 @@ So far the behaviour, is an oscillating process between seemingly random output 
 The executed code, by tracing commands with strace, is cloning main process, creating folders, files, changing access privileges, communicating with child processes etc.
 The terminal sometimes changes language and characters. Although interesting it shall be noted that even random bytes does a lot of this. However the output is not random.
 
+![pseudocode](./img/pseudocode.png)
+ 
 
-
-
-Request: Please come with remarks and ideas of what you would like to have in terms of capabilities if you were a computer!   
-
-Latest update:   
+### Latest update:   
 
 20230522: Added a Reinforcement Learning (RL) step with method Proximal Policy Optimization (PPO). It takes reward from the executions strace, highest reward is achieved if the number of systemcalls are all in equal number (eg. {clone:4, getppid:4, openat:4, ...}) ``` bytemed_local_lora_large_ppo.py ```   
 
