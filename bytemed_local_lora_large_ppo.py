@@ -130,7 +130,7 @@ def run_strace(binary_path):
     return stdout.decode('utf-8')
 
 def run_awk_extract():
-	command = "awk 'NR>2 {print $4}' strace_output.txt > sys_calls_extract.txt"
+	command = "awk 'NR>2 {print $4}' strace_summary.txt > sys_calls_extract.txt"
 	process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 
