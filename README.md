@@ -17,6 +17,10 @@ The terminal sometimes changes language and characters. Although interesting it 
 
 ### Latest update:   
 
+#### Latest Visualisation - 10 latest outputs visualised where phi is the time, theta is the output index and radius and colour represents the byte values:
+![outputvis](./img/vis.png)
+
+
 20230526: Replaced reward in RL step to GPT-4 response, see ```bytemed_local_lora_large_degrade_ppo_gpt4_history.py```
 
 20230522: Added a Reinforcement Learning (RL) step with method Proximal Policy Optimization (PPO). It takes reward from the executions strace, highest reward is achieved if the number of systemcalls are all in equal number (eg. {clone:4, getppid:4, openat:4, ...}) ``` bytemed_local_lora_large_ppo.py ```   
