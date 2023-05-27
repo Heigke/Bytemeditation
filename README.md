@@ -17,8 +17,8 @@ The terminal sometimes changes language and characters. Although interesting it 
 
 ### Latest update:   
 
-#### Latest Visualisation - 10 latest outputs visualised where phi is the time, theta is the output index and radius and colour represents the byte values:
-![outputvis](./img/vis.png)
+#### Latest Visualisation - Each frame has 10 latest outputs visualised where phi is the time, theta is the output index and radius and colour represents the byte values:
+![outputvis](./img/vis_anim.gif)
 
 
 20230526: Replaced reward in RL step to GPT-4 response, see ```bytemed_local_lora_large_degrade_ppo_gpt4_history.py```
