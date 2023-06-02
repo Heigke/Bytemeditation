@@ -21,6 +21,11 @@ The terminal sometimes changes language and characters. Although interesting it 
 ![outputvis](./img/vis_anim.gif)
 
 
+20230602: Updated script with a new entropy calculation based on spatial entropy from [movebank.org](www.movebank.org/) and also added a tensorboard logging which can be broadcasted with ```tensorboard dev upload --logdir logs     --name "test" --description "trying to display progress of bytemed"``` 
+and the new file is run with ```python3 bytemed_local_lora_large_degrade_ppo_internal_grad_entropy_fixed_tensorboard.py```-
+Below is an image showing the spatial bins for entropy calculation at movebank (this example is movement of Somateria fischeri)
+![spatialentropy](./img/study_1169957016_spatial_bins.png)
+
 20230528: Replaced reward in RL step to one that is proportional to how much the 5% least changed gradients change from one step to another. ``bytemed_local_lora_large_degrade_ppo_internal_grad.py
 
 20230526: Replaced reward in RL step to GPT-4 response, see ```bytemed_local_lora_large_degrade_ppo_gpt4_history.py```
