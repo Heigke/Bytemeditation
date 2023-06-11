@@ -17,6 +17,12 @@ The terminal sometimes changes language and characters. Although interesting it 
 
 ### Latest update:   
 
+#### First Infinite Assembly Loop by Bytemeditation 
+![assembly](./img/assembly1.png)
+![assembly](./img/assembly2.png)
+
+
+
 #### Latest Visualisation - Each frame has 10 latest outputs visualised where phi is the time, theta is the output index and radius and colour represents the byte values:
 ![outputvis](./img/vis_anim.gif)
 
