@@ -19,9 +19,9 @@ The terminal sometimes changes language and characters. Although interesting it 
 
 #### NEPHILIM 20230725 - Tree of Thought (ToT) with vector database memories and training on conclusions
 A visualisation that can be found at [Nephilim-ToT visualisation](http://heigk.pythonanywhere.com/draw/run64)
-!{tot](./img/ToT1.png)
+![tot](./img/ToT1.png)
 How the terminal looks when running (upper left is the consumer-LLM, now LLAMA-v2, which can be scaled out by adding more nodes. On the bottomright is the current ToT which also can be scaled out. On the bottom left is the training which currently is done by collecting the conclusions from the finished ToTs.
-!{tot](./img/ToT-terminal1.png)
+![tot](./img/ToT-terminal1.png)
 
 #### First Infinite Assembly Loop by Bytemeditation 
 ![assembly](./img/assembly1.png)
