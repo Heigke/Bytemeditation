@@ -16,7 +16,8 @@ The terminal sometimes changes language and characters. Although interesting it 
  
 
 ### Latest update:   
-
+#### NEPHILIM 20230728 - Whatsapp integration for finished thoughts 
+![whatsapp](./img/whatsapp.png)
 #### NEPHILIM 20230725 - Tree of Thought (ToT) with vector database memories and training on conclusions
 A visualisation that can be found at [Nephilim-ToT visualisation](http://heigk.pythonanywhere.com/draw/run64)
 ![tot](./img/ToT1.png)
