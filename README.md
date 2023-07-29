@@ -16,6 +16,9 @@ The terminal sometimes changes language and characters. Although interesting it 
  
 
 ### Latest update: 
+#### NEPHILIM 20230729 - Using high level equations as a means for inner dialogue
+![innereq](./img/equationjuggle.png)
+
 #### NEPHILIM 20230729 - Architecture rough sketch - See Nephilim repo for explanation
 ![nephilimarch](./img/nephilimarchitecture2.png)
 
