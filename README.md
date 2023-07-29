@@ -16,9 +16,9 @@ The terminal sometimes changes language and characters. Although interesting it 
  
 
 ### Latest update: 
-#### NRPHILIM 20230729 - Math with Wolfram + Self reflection of evaluation + Telegram
+#### NEPHILIM 20230729 - Math with Wolfram + Self reflection of evaluation + Telegram
 Whatsapp twilio changed to telegram. Added a conversion to differential equation of the current thought and asks wolfram alpha for more info (see the pods below). It models complex topics in simple toyful quite incorrect terms like you would do on a napkin. Due to the memory bank of all evaluations it gets into modelling its evaluation which probably will effect it.... 
-![wolfra](./img/wolframmath.png)
+![wolfra](./img/wolfram.png)
 #### NEPHILIM 20230728 - Whatsapp integration for finished thoughts 
 ![whatsapp](./img/whatsapp.png)
 #### NEPHILIM 20230725 - Tree of Thought (ToT) with vector database memories and training on conclusions
