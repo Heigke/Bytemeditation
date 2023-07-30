@@ -16,6 +16,9 @@ The terminal sometimes changes language and characters. Although interesting it 
  
 
 ### Latest update: 
+#### NEPHILIM 20230730 - Tech To Speech with [Tortoise-TTS](https://github.com/neonbjb/tortoise-tts)
+A test of letting the model speak its conclusions. Some words are missing and equations are hard to follow but the brittish Nephilim brings some comfort.
+
 #### NEPHILIM 20230729 - Using high level equations as a means for inner dialogue
 ![innereq](./img/equationjuggle.png)
 
