@@ -21,7 +21,7 @@ An attempt to visualise the sets of possible events the models will engage with 
 ![world](./img/Worldmodel.png)
 
 In order to guide the models further I have played with adding or altering the transformer architecture to incorporate an entropy balance mechanism to keep the model stable even when connected to itself.
-![entropyattention](./img/entropyattention.png)
+![entropyattention](./img/entropyattention.jpg)
 
 #### NEPHILIM 20230730 - Tech To Speech with [Tortoise-TTS](https://github.com/neonbjb/tortoise-tts)
 A test of letting the model speak its conclusions. Some words are missing and equations are hard to follow but the brittish Nephilim brings some comfort.
