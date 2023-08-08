@@ -16,6 +16,13 @@ The terminal sometimes changes language and characters. Although interesting it 
  
 
 ### Latest update: 
+#### BYTEMEDITATION 20230808 - Modelling of the world and playing with adjustment to transformer architecture
+An attempt to visualise the sets of possible events the models will engage with and at the same time try to box in what we call "life". It is clear from doing this image that we need explicit descriptions of what life is if we want it to behave "life-like". Otherwise we wont create the right data. I am thinking that by expanding the models and their interaction with the world through all senses it will in the end model all possible events and master entropy balances as well as life as a subset, thus it might come last.
+![world](./img/Worldmodel.png)
+
+In order to guide the models further I have played with adding or altering the transformer architecture to incorporate an entropy balance mechanism to keep the model stable even when connected to itself.
+![entropyattention](./img/entropyattention.png)
+
 #### NEPHILIM 20230730 - Tech To Speech with [Tortoise-TTS](https://github.com/neonbjb/tortoise-tts)
 A test of letting the model speak its conclusions. Some words are missing and equations are hard to follow but the brittish Nephilim brings some comfort.
 ![injustice](./audio/injustice.wav)
