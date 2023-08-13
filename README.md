@@ -27,6 +27,13 @@ Consider human cognition as an analogy. The mind's ability to project into the f
 
 Bringing this back to Transformers, solely focusing on what comes next might lead the model down a narrow, possibly erroneous, path – essentially, becoming confined to the first appealing branch in the decision graph. However, by introducing a mechanism to predict or understand what led up to a series of tokens, the Transformer is endowed with a self-correcting function. This "backward" ability serves as a contemplative check, aligning the model's internal world representation with factual antecedents. By intertwining forward prediction with backward retrospection, Transformers can not only generate but also evaluate, rectify, and refine their outputs, bridging the gap between mere prediction and genuine comprehension.
 
+##### 7b llama v2 qlora vacuna reverse training 24h á 40 gb GPU ram
+So some short tests with the model trained on reverse prompts, the prompt from me is at the bottom. You see what you want to see but I am thinking of the struggle it has with numbers (primes even?), sequences (who is answering and who is questioning?), counting and time. These are concepts I belive could be linked to the subgraph matching it does and that this training might have struck on the directionality of these. Thats why I initiated a similar training but on a larger 70b model because I believe it strikes at the heart of the planning process we want to infuse it with.
+[rev1](./img/rev1.png)
+[rev1](./img/rev2.png)
+[rev1](./img/rev3.png)
+[rev1](./img/rev4.png)
+
 #### BYTEMEDITATION 20230808 - Modelling of the world and playing with adjustment to transformer architecture
 An attempt to visualise the sets of possible events the models will engage with and at the same time try to box in what we call "life". It is clear from doing this image that we need explicit descriptions of what life is if we want it to behave "life-like". Otherwise we wont create the right data. I am thinking that by expanding the models and their interaction with the world through all senses it will in the end model all possible events and master entropy balances as well as life as a subset, thus it might come last.
 ![world](./img/Worldmodel.png)
