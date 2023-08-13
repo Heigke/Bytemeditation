@@ -16,6 +16,17 @@ The terminal sometimes changes language and characters. Although interesting it 
  
 
 ### Latest update: 
+#### NEPHILIM 20230813 - Retrospective Transformer (bidirectional-ish) To Increase Planning and Contemplation
+
+Below is an idea of trying to, a bit like with BERT, add a way to be able to predict what has happened before but an experimentation has been done where a new architecture is not needed. LLAMA v2 7b has been trained with qlora on vicuna dataset but backwards in order to be able to get probabilities of what is most probable to come before a set of tokens, yellow below.
+![retro](./img/RetrospectiveTransformer.png)
+A short motivation made by gpt4 and me: 
+In the realm of deep learning and natural language processing, the capacity to generate coherent and contextually relevant text is of paramount importance. Traditional Transformer models, primarily designed with a forward prediction approach, have achieved considerable success in this respect. Predicting the next token in a sequence, in essence, is akin to navigating through the branches of a vast decision tree, always choosing the seemingly optimal path. However, this unidirectional progression can be likened to moving forward without retrospection — there's a persistence in momentum but a lack of self-correction and contemplation.
+
+Consider human cognition as an analogy. The mind's ability to project into the future is complemented by its reflective capability, analyzing past events to refine and adjust current perspectives. When errors emerge in our understanding or mental models of the world, retracing cognitive steps becomes essential. This corrective introspection is evident, for instance, in brain-injured individuals who mentally navigate backwards in time, seeking the origin of their trauma to reclaim and reconstitute fragmented memories and lost cognitive functions.
+
+Bringing this back to Transformers, solely focusing on what comes next might lead the model down a narrow, possibly erroneous, path – essentially, becoming confined to the first appealing branch in the decision graph. However, by introducing a mechanism to predict or understand what led up to a series of tokens, the Transformer is endowed with a self-correcting function. This "backward" ability serves as a contemplative check, aligning the model's internal world representation with factual antecedents. By intertwining forward prediction with backward retrospection, Transformers can not only generate but also evaluate, rectify, and refine their outputs, bridging the gap between mere prediction and genuine comprehension.
+
 #### BYTEMEDITATION 20230808 - Modelling of the world and playing with adjustment to transformer architecture
 An attempt to visualise the sets of possible events the models will engage with and at the same time try to box in what we call "life". It is clear from doing this image that we need explicit descriptions of what life is if we want it to behave "life-like". Otherwise we wont create the right data. I am thinking that by expanding the models and their interaction with the world through all senses it will in the end model all possible events and master entropy balances as well as life as a subset, thus it might come last.
 ![world](./img/Worldmodel.png)
