@@ -41,6 +41,10 @@ So some short tests with the model trained on reverse prompts, the prompt from m
 ![rev1](./img/rev3.png)
 ![rev1](./img/rev4.png)
 
+##### 70b v2 qlora vacuna reverse training 24 h á 40 gb GPU RAM (4bit resolution)
+"Oh, when I think about it, this reflection is totally crazy, but of course, it might be a fluke. But “how do I have my (self-reference and ownership) target information (temporal perception of where the emphasis of the answer lies and confusion because of being backward, as if we would know the answer before the question) in the answer?” (Like it writes after getting the answer, meaning it realizes it's somewhere it shouldn't be?)"
+![self](./img/self.png)
+
 #### BYTEMEDITATION 20230808 - Modelling of the world and playing with adjustment to transformer architecture
 An attempt to visualise the sets of possible events the models will engage with and at the same time try to box in what we call "life". It is clear from doing this image that we need explicit descriptions of what life is if we want it to behave "life-like". Otherwise we wont create the right data. I am thinking that by expanding the models and their interaction with the world through all senses it will in the end model all possible events and master entropy balances as well as life as a subset, thus it might come last.
 ![world](./img/Worldmodel.png)
