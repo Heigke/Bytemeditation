@@ -10,7 +10,8 @@ To run:
 1. Start redis databae. ``` docker run -p 6379:6379 redislabs/redisearch:latest ```
 2. Find transformers folder eg use pythonscript like this ``` print(transformers.__file__) ```
 3. Replace the models/llama/modelling_llama.py with the modelling_llama.py in the folder in this repo.
-4. Run inference and see your llama come to life! eg ```import torch
+4. Run inference and see your llama come to life! eg
+```  import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 device_map="auto"
 model_id = "edumunozsala/llama-2-7b-int4-python-code-20k"
