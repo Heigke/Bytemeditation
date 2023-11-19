@@ -5,9 +5,13 @@
  
 
 ### Latest update: 
+
+#### NEPHILIM 20231119 - LLAMA2 hidden state vector augmentation with cupy
+Same as below but now with the vector lookup on cupy instead. Hellaswag evaluation going on.
+
 #### NEPHILIM 20231117 - LLAMA2 hidden state vector lookup and angle correction
 To run:
-1. Start redis databae. ``` docker run -p 6379:6379 redislabs/redisearch:latest ```
+1. Start redis database. ``` docker run -p 6379:6379 redislabs/redisearch:latest ```
 2. Find transformers folder eg use pythonscript like this ``` print(transformers.__file__) ```
 3. Replace the models/llama/modelling_llama.py with the modelling_llama.py in the folder in this repo.
 4. Run inference and see your llama come to life! eg
