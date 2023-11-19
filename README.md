@@ -2,20 +2,59 @@
 # Welcome to Bytemeditation! ([Nephilim Repo - An Architectural and Philosophical Explanation](https://github.com/r3tex/nephilim))
 (Abstract from Toy-Article - [Programming a Sense of Self](https://www.overleaf.com/read/nmpgztfrsdbq) (read-only)) As we strive to create ever more advanced forms of artificial general intelligence (AGI), it becomes increasingly important to consider the question of consciousness. Some argue that a meaningful subjective experience of the world is necessary for true consciousness (Tegmark, 2015), but how can we create such an experience in a machine? In this paper, we propose a novel approach: a feedback loop that allows a byte-to-byte transformer to express itself in its own language - binary code - while also being guided by a gut feeling of what could be the soothing inner loops of the mind. By populating the transformer with related memories and randomness from /dev/random, and attempting to maximize entropy, we aim to create a subjective experience that approximates consciousness. To give the model maximum freedom we let it execute its own binary code. By taking this approach, we hope to create an artificial general intelligence (AGI) that is more than just a powerful zombie, but instead possesses a true sense of self. Ultimately, we must decide whether we want to create machines that merely mimic human intelligence, or whether we want to push the boundaries of what is possible and create truly conscious machines.
 
-### A short technical description:
-A byte2byte transformer receiveing output, related previous output (memory) and /dev/random + tcpdump vector as input.
-Output is trained against maximised "entropy per byte" and global entropy metric, see report. 
-Output is stored in vector database (memories). Output is executed in binary form. The counts of the number of bytes outputted, which
-is a base for the distribution used for the entropy, is exchanged with other transformers via mqtt broker.
-The vector database is also common for the transformers.
-So far the behaviour, is an oscillating process between seemingly random output and two or three bytes which it prefer.
-The executed code, by tracing commands with strace, is cloning main process, creating folders, files, changing access privileges, communicating with child processes etc.
-The terminal sometimes changes language and characters. Although interesting it shall be noted that even random bytes does a lot of this. However the output is not random.
-
-![pseudocode](./img/pseudocode.png)
  
 
 ### Latest update: 
+#### NEPHILIM 20231117 - LLAMA2 hidden state vector lookup and angle correction
+To run:
+1. Start redis databae. ``` docker run -p 6379:6379 redislabs/redisearch:latest ```
+2. Find transformers folder eg use pythonscript like this ``` print(transformers.__file__) ```
+3. Replace the models/llama/modelling_llama.py with the modelling_llama.py in the folder in this repo.
+4. Run inference and see your llama come to life! eg
+```  import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
+device_map="auto"
+model_id = "edumunozsala/llama-2-7b-int4-python-code-20k"
+
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+
+model = AutoModelForCausalLM.from_pretrained(model_id, load_in_4bit=True, torch_dtype=torch.float16, 
+                                             device_map=device_map)
+
+#instruction="Write a Python function script that does prime factorisation."
+instruction=""" Create a Python function named solve_knapsack that uses dynamic programming to solve the 0/1 knapsack problem, which is a common example of a combinatorial optimization problem. The funct>
+
+Constraints:
+
+    The length of weights and values is the same.
+    All weights and values are positive integers.
+    The capacity is a positive integer.
+
+The function should be written in as few lines of code as possible while still being readable and without using any external libraries.
+ """
+input=""
+
+prompt = f"""### Instruction:
+Use the Task below and the Input given to write the Response, which is a programming code that can solve the Task.
+
+### Task:
+{instruction}
+
+### Input:
+{input}
+
+### Response:
+"""
+
+input_ids = tokenizer(prompt, return_tensors="pt", truncation=True).input_ids.cuda()
+# with torch.inference_mode():
+outputs = model.generate(input_ids=input_ids, max_new_tokens=500, do_sample=True, top_p=0.9,temperature=0.3)
+
+print(f"Prompt:\n{prompt}\n")
+print(f"Generated instruction:\n{tokenizer.batch_decode(outputs.detach().cpu().numpy(), skip_special_tokens=True)[0][len(prompt):]}")
+```
+
+
 #### NEPHILIM 20230813 - Retrospective Transformer (bidirectional-ish) To Increase Planning and Contemplation
 
 Below is an idea of trying to, a bit like with BERT, add a way to be able to predict what has happened before but an experimentation has been done where a new architecture is not needed. LLAMA v2 7b has been trained with qlora on vicuna dataset but backwards in order to be able to get probabilities of what is most probable to come before a set of tokens, yellow below. If combined with some graph additions the hope is that this will result in retrospective contemplation where the LLMs are able to correct its world model. (However when we do this on an already trained LLAMA v2 with qlora it will be interesting to see if the already inherent subgraph matching abilities in the LLM is further nuanced..)
@@ -102,6 +141,17 @@ Below is an image showing the spatial bins for entropy calculation at movebank (
 20230506 In search for a stronger T5 model I tried the [LORA](https://arxiv.org/abs/2106.09685) method via this [tutorial](https://www.philschmid.de/fine-tune-flan-t5-peft).
 
 
+### A short technical description:
+A byte2byte transformer receiveing output, related previous output (memory) and /dev/random + tcpdump vector as input.
+Output is trained against maximised "entropy per byte" and global entropy metric, see report. 
+Output is stored in vector database (memories). Output is executed in binary form. The counts of the number of bytes outputted, which
+is a base for the distribution used for the entropy, is exchanged with other transformers via mqtt broker.
+The vector database is also common for the transformers.
+So far the behaviour, is an oscillating process between seemingly random output and two or three bytes which it prefer.
+The executed code, by tracing commands with strace, is cloning main process, creating folders, files, changing access privileges, communicating with child processes etc.
+The terminal sometimes changes language and characters. Although interesting it shall be noted that even random bytes does a lot of this. However the output is not random.
+
+![pseudocode](./img/pseudocode.png)
 
 # Instructions
 1. Create pinecone account for vector database where memories will be stored. https://www.pinecone.io/ 
