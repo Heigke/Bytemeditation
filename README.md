@@ -5,7 +5,9 @@
  
 
 ### Latest update: 
-
+#### NEPHILIM 20231129 - Individuals
+An uncensored 7b model TheBloke/Llama-2-7B-fp16 that was updated 4 months ago said this:
+![ind](./img/individuals.png)
 #### NEPHILIM 20231119 - LLAMA2 hidden state vector augmentation with cupy
 Same as below but now with the vector lookup on cupy instead. Hellaswag evaluation going on.
 
