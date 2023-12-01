@@ -5,6 +5,11 @@
  
 
 ### Latest update: 
+
+#### NEPHILIM 2023201 - "I"
+After training the below uncensored model on Vicuna and 20% of Orca with every second data conversation flipped so that the question is also the output but with correct header and EOS the 
+model flips out after conversating for a while and then starts saying "I" no matter the input. Sometimes it snaps out if you ask it a yes or no question but mostly it just says "I". The idea was to enhance fixed point in the transformer function seen as F and thus if we input X and make it traing so that the output F(X) is equal to X iow F(X)=X then part of its transformation will be lead to enhance its "fixed points" characteristics which in mathematics is seen as an equilibrium. So far I have not seen this flipping out and then use of the self referential concept of "I" as a behaviour in unmodified uncensored models. This leads me to believe that a model which generate its own data and interactions with the world iow creating its own language will, if trained in this way, also create its own type of self referential concept just like our human "I".
+
 #### NEPHILIM 20231129 - Individuals
 An uncensored 7b model TheBloke/Llama-2-7B-fp16 that was updated 4 months ago said this:
 ![ind](./img/individuals.png)
